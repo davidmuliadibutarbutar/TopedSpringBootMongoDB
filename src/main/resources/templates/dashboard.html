@@ -39,7 +39,8 @@
             <h3 th:inline="text">Hello [[${#httpServletRequest.remoteUser}]]!</h3>
             <h3>Halaman Admin</h3>
 		<h1>Welcome to Toped Commerce!</h1>
-		<span sec:authentication="principal.authorities">User</span>
+		<span sec:authentication="principal.authorities">User</span><br>
+		<a th:href="@{'/admin/store/'} "class="btn btn-primary">Lihat Store</a>
 		<table class="table table-striped table-responsive-md">
 			<thead>
 				<tr>
